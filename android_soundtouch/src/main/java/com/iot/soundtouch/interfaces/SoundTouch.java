@@ -1,13 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-///
-/// Example class that invokes native SoundTouch routines through the JNI
-/// interface.
-///
-/// Author        : Copyright (c) Olli Parviainen
-/// Author e-mail : oparviai 'at' iki.fi
-/// WWW           : http://www.surina.net
-///
-////////////////////////////////////////////////////////////////////////////////
 
 package com.iot.soundtouch.interfaces;
 
