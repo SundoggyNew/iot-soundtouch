@@ -15,7 +15,7 @@ add_library(
 find_library(
         log-lib
         log)
-
+target_link_options(iot-soundtouch PRIVATE "-Wl,-z,max-page-size=16384")
 target_link_libraries(
         iot-soundtouch
         ${log-lib})
