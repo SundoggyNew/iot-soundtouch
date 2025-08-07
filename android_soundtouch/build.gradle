@@ -43,13 +43,18 @@ android {
     lintOptions {
         abortOnError false
     }
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-def libVersion = '1.0.1-SNAPSHOT'
+def libVersion = '1.0.2'
 ext.isReleaseVersion = !libVersion.endsWith("SNAPSHOT")
 mavenPublishing {
 

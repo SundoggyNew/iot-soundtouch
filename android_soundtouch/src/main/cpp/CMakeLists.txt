@@ -15,6 +15,7 @@ add_library(
 find_library(
         log-lib
         log)
+set(CMAKE_VERBOSE_MAKEFILE ON)
 target_link_options(iot-soundtouch PRIVATE "-Wl,-z,max-page-size=16384")
 target_link_libraries(
         iot-soundtouch
